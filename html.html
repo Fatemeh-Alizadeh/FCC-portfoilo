@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sanitize.css/2.0.0/sanitize.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <header id="header">
+            <div class="logo">
+                <h3 >
+                    Portfolio
+                </h3>
+            </div>
+            <nav id="navbar">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#welcome-section" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+        
+                        <a href="#about-me" class="nav__link">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#projects" class="nav__link">Project</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact-me" class="nav__link">Contact </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section id="welcome-section" class="welcom">
+            <h1 class="welcom__title">
+                'hello world'
+            </h1>
+            <h3 class="welcom__subtitle1">I am <strong>Fatemeh</strong></h3>
+            <p class="welcom__subtitle2">front end web developer</p>
+            <img src="img/welcom.jpg" alt="" class="welcom__img">
+            <footer>
+                <div class="links">
+                   <a href="https://codepen.io/Fatemehh" id="profile-link">
+                     <img  class="welcom__link"
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAB8klEQVRIS8WW7zUFUQzE51WAClABJegAHVABHaADKkAF6EAJOkAFqIDzc5Jz8uL+2/Vh99Nz78pkMplkV1roWS2Eq/8An0j6lPQ4J/k5wDuSbiUdGCDAp5bEcA5Tgc8lXUjaTAgw5+5+FHkUOLN8knRoIPH3s7F/6yUwAhxZfklCW8r7bcGJcSTpTtKGlfxS0k0LvAVcYukNRcwIzN+UH3CvRJN9DbjGMpLIwH43xD4D91iOAA+xj8DY48FKFrUsSUWCr3axK6nWTJn9sSQkWBsgNARW4Wnpky2FlWrNlCt4Ze9WgQHPAXMQPEtD1ZqJZM6S55vA2ACQGBD7EAigLEMu57XZa9+q57YiiSawX8aArjPDIlrKz7OVOH+3d5HNZRwCLo3HmvawY347S5eKGe7Von+awGi3HZYALBkMlJDzrH1sSliSMFVxqQDmvFtqL1/WknJ6w3jncxa15J7EeEpSdbu6piUB8TsVgH3WMnuexJBnzy6KwGTOSz7oXZ/SACHgh11sNXZxHr0k/ZIHSGnUtZZ8bVYTpzt6a0sie7O05GvAIwum+c3VW3MZuMsyajbyIVBbcxF4iOVU4JL2NKF/7MXfLTesNekI4/gPJW9y31ujf5wxFbjEfpjlnFKXvAx7ptTvYp/6zGE8FaP4/mLAP1axrx9brMrPAAAAAElFTkSuQmCC" />
+                    </a>
+            
+                    <img class="welcom__link"
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAABB0lEQVRIS+2X4Q0BQRCFPx3oAB3oABUogQ7ogA60oAQdoAMqQAd0IC+5TcYkt4ncnONif93mcvNl3rzZnevQ0Oo0xOWrwH2gF6zEDbjamD5jQS/B0BRuYOEePAb2NYEnwCHF/nnwA1gDJ6PWENiYfXjGZ0AlursS+bKFg18CGnjtYOsTybsA1B1dQPu0QjM+FjKn4DtgWtIVtYLVLqPWgeXiZZGVnOxbSLXVmgOzyBr7upYddOrrVRNgb7TK5tItsy0y0a2TnpO86WaT1Gqrj7RTO11tzeSN9s/YqlPZ1e2S+t1h7x1zZYc9ySi4bfzc7Jc7q+13OnSy420OEvruq/4kQjMrC/YEj85dHzBTXL4AAAAASUVORK5CYII=" />
+            
+                    <img class="welcom__link"
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAACJklEQVRIS+WW3TUFQRCE60aACBABIkAGRIAIEAEiQASIgAwQASJABIiA8+3Z3tPb5md3PdwH/XLP3Z2Z6uquqd6Z5hSzOeFqCvCWpAVJ623Sz5I+JT2OITEUeEXSiaQdSYsZAMDvJF1KIpli1IABOZe0XzsovL+WdNxWIrm1BEwpr1xJR2LrTdJujn0OGND7QlmHJkH5t1PgKWDKC6iJ511qst8ciPbSrltrf9m7EcueAqY/ew6EjB8kITDekRji4UCC5yQJO7TAc/4/uTNuok4iMIe8BmarDmQg6WbZd1gM607tEfhC0mHYYIzHgEbG7O2xjsCUadkh0F8r4xhga4c/i1Ys2SEeOJXlQdvXMaC2ln5zHX101fPAWCFq9tHry0h0WH+EPdxr3K3n1UetS/m1NWer5RIFdibpdAjwFGFZMqkbkgROlfovPWag3IaSdOf5UqYyxDhgPSWiEXFGp5nYQyTPrPUxhXVK0V/e+0sGwh22e4ggmLMkVgqUjAE1AgpRNBBfbqRvw92qQOlJoLkSLvAA5jY6yUXRMtlEtnxtEPSXZLwRpLw7dWd9AiTLde0iNxZhxlgzccEIlWLyka0dltIH7xiTVKLXppxBwBIQSow6EVgtSDLObAQF6K9vsJIzAQ47G+hspqSUOhWRMUxRd/LDr2aJANEb6zmAuT3eHukpWsneghqwMYM9CfBLr1NBSwBiptvXSbY9Q4Fr/R39/v8B/wD5i3If2PXuZAAAAABJRU5ErkJggg==" />
+            
+                </div>
+            
+            
+            </footer>
+
+        </section>
+
+        <section class="about" id="about-me">
+
+            <h2 class="section__title">about me</h2>
+        <div class="about__body">
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolor totam quae ad! Culpa voluptatem consequuntur sint? Sunt beatae porro delectus exercitationem, explicabo magnam cumque placeat, suscipit, veniam architecto unde.</p>
+           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis excepturi harum consequatur unde iusto cupiditate eum illum veniam quisquam architecto!</p>
+        </div>
+           <img src="img/about.jpg" alt="" class="about__img">
+
+        </section>
+
+        <section id="projects" class="projects">
+            <h2 class="section__title" id="projects__title">my works</h2>
+            <div class="works">
+
+                <div class="project-tile">
+                    <a href="https://codepen.io/Fatemehh/details/OJRZWgP" target="_blank">
+                        <img src="img/form.png" alt="form" class="projects__img">
+                    </a>
+                    <h3>form</h3>
+                </div>
+
+                <div class="project-tile"><a href="https://codepen.io/Fatemehh/pen/LYRaQar" target="_blank">
+                    <img src="img/Landing-Page.jpg" alt="landing page" class="projects__img">
+                </a>
+            <h3>landing page</h3>
+        </div>
+
+                <div class="project-tile"><a href="https://codepen.io/Fatemehh/pen/rNMGmYq" target="_blank">
+                    <img src="img/tribute.jpg" alt="tribute" class="projects__img">
+                </a>
+            <h3>tribute</h3>
+            </div>
+
+            </div>
+        </section>
+
+        <section class="contact" id="contact-me">
+            <h2 class="section__title">contact</h2>
+            <form action="#">
+                <div class="name">
+                    <label for="label-name">Name:</label>
+                    <input type="text" id="label-name" name="name" required>
+                </div>
+
+                <div class="email">
+                    <label for="label-email">Email:</label>
+                    <input type="text" id="label-email" name="email" required>
+                </div>
+
+                <div class="textarea">
+                    <label for="label-textarea">Massage me:</label>
+                    <textarea name="textarea" id="label-textarea" cols="30" rows="10"></textarea>
+                </div>
+
+                <div class="submit">
+                    <button id="submit" class="button">SUBMIT</button>
+                </div>
+
+
+            </form>
+
+        </section>
+        <footer>
+           
+        </footer>
+        
+
+
+
+
+
+
+
+
+
+
+    </div>
+    
+</body>
+</html>
